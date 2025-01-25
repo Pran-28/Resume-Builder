@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume Builder</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Resume Builder</h1>
+        </header>
+
+        <main>
+            <section id="form-section">
+                <h2>Enter Your Details</h2>
+                <form id="resume-form">
+                    <label for="photo">Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*"/>
+                    
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" required/>
+                    
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required/>
+                    
+                    
+                    <label for="number">PhoneNo:</label>
+                    <input type="number" id="number" placeholder="Enter Your Number" required/>
+                    
+                    
+                    <label for="summary">Summary:</label>
+                    <textarea id="summary" name="summary" placeholder="Enter Your Summary" required></textarea>
+                    
+                    <label for="education">Education:</label>
+                    <textarea id="education" placeholder="Enter your Education Qualifications" name="education"></textarea>
+                    
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" placeholder="Enter your Experience Qualifications" name="experience"></textarea>
+                    
+                    <label for="skills">Skills:</label>
+                    <textarea id="skills" placeholder="Enter your Skills" name="skills"></textarea>
+                    
+                    <button type="button" id="generate-resume">Generate Resume</button>
+                    
+                    <button type="button" id="print-resume">Print Resume</button>
+
+                    <!-- resume section where the form comes -->
+                    <section id="resume-preview">
+                        <h2>Resume Preview</h2>
+                        <div id="resume-preview"></div>
+                    </section>
+                </form>
+            </section>
+        </main>
+
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
