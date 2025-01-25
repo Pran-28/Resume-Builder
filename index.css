@@ -1,0 +1,91 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+
+}
+
+header{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+section{
+    width: 55%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form label{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 0.4rem;
+    padding-left: 1%;
+    padding-right: 0.5%;
+    border-radius: 3px;
+    border: border 1px black;
+    background-color: #f9f9f9;
+}
+
+#resume-preview {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#resume-preview .sidebar img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#resume-preview .content{
+    width: 50%;
+    padding-left: 1.5rem;
+}
+
+#resume-preview h1{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+
+}
+
+#resume-preview div{
+width: 50%;
+padding: 1rem;
+}
+
+
+@media print{
+    body * {
+        visibility: hidden;
+    }
+
+    #resume-preview , #resume-preview *{
+        visibility: visible;
+    }
+}
